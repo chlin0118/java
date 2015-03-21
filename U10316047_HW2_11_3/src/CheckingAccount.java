@@ -1,7 +1,7 @@
 /**
- * Name:ªL®a¥°
+ * Name:æž—å®¶å¼˜
  * ID: U10316047
- * Ex: §@·~¤G 11.3
+ * Ex: ä½œæ¥­äºŒ 11.3
  */
 public class CheckingAccount extends Account{
 	
