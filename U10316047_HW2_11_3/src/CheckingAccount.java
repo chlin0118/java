@@ -29,13 +29,30 @@ public class CheckingAccount extends Account{
 		this.overdraftLimit = overdraftLimit;
 	}
 	
+	//Deposit the money
+	@Override
+	public void deposit(double money){
+		super.deposit(money);
+	
+		if (super.getBalance() < 0){
+			System.out.println("You still need to deposit " + (-super.getBalance()) + " more");
+		}
+	}
+	
 	//Withdraw the money if the amount isn't over the overdraft limit
 	@Override
 	public void withdraw(double money){
-		if (money > super.getBalance() + overdraftLimit){
+		if (super.getBalance() < 0){
+			System.out.println("You can't withdraw until you deposit enough money");
+		}
+		else if (money > super.getBalance() + overdraftLimit){
 			System.out.println("You can't withdraw over the overdraft limit");
 		}
-		else {
+		else if(money > super.getBalance() && money <= super.getBalance() + overdraftLimit){
+			super.withdraw(money);
+			System.out.println("You withdraw over your balance");
+		}
+		else{
 			super.withdraw(money);
 		}
 	}
