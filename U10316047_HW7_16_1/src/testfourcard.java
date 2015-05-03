@@ -66,7 +66,7 @@ public class testfourcard extends JFrame {
    
 	class RefreshListener implements ActionListener { // Inner class
 		@Override
-		public void actionPerformed(ActionEvent e) {
+		public void actionPerformed(ActionEvent e) { 
 			//Invoke methods to shuffle the deck
 			shuffle();
 			
