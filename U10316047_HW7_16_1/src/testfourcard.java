@@ -14,7 +14,7 @@ public class testfourcard extends JFrame {
 	
 	//Create four image icons
 	private ImageIcon card1;
-	private ImageIcon card2;
+	private ImageIcon card2; 
 	private ImageIcon card3;
 	private ImageIcon card4;
 	
