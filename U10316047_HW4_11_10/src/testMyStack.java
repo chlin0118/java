@@ -53,7 +53,7 @@ class MyStack extends ArrayList<Object>{
 		super.remove(getSize() - 1);
 		return o;
 	}
-
+ 
 	//Add the specified element to the stack
 	public void push(Object o) {
 		super.add(o);
